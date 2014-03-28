@@ -31,3 +31,8 @@ svg("output.svg")
 autoplot(gff, aes(fill = different), facets = file ~ .) +
     theme(legend.position="none")
 dev.off()
+
+system("cat output.svg")
+
+unlink(c("gffdiff", gffls0, "output.svg"))
+
