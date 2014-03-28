@@ -2,5 +2,6 @@
 
 rm -f output.svg
 wget $1
-gt sketch -format svg output.svg $1
+gt sketch -format svg output.svg $(basename "$1" .txt)
 cat output.svg
+rm -f output.svg $(basename "$1" .txt)
