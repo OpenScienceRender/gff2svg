@@ -6,7 +6,7 @@ Given a url pointing to a valid `gff` file, prints the corresonding `svg` to `st
 - Requirements: [`genometools`](http://genometools.org/)
 - Installation: `sudo apt-get install genometools`
 
-Usage: `gff2svg https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/ex1.gff3`
+Usage: `./gff2svg https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/ex1.gff3`
 
 
 
@@ -22,6 +22,6 @@ biocLite(c("rtracklayer", "ggbio"))
 
 Input: file with 2 gff3 filenames to be compared. These should be present at the same url as the original input.
 
-Usage: `gffdiff https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/my.gffdiff`
+Usage: `./gffdiff https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/my.gffdiff`
 
 
