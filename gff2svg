@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f output.svg
+wget $1
+gt sketch -format svg output.svg $1
+cat output.svg
