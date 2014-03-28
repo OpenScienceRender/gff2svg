@@ -6,7 +6,7 @@ Given a url pointing to a valid `gff` file, prints the corresonding `svg` to `st
 - Requirements: [`genometools`](http://genometools.org/)
 - Installation: `sudo apt-get genometools`
 
-Usage: `gff2svg https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/ex1.gff3
+Usage: `gff2svg https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/ex1.gff3`
 
 
 
