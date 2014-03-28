@@ -8,9 +8,9 @@ url <- args[-(1:match("--args", args))]
 stopifnot(require("rtracklayer"))
 stopifnot(require("ggbio"))
 
-download.file(url, destfile = "gffdiff", method = "wget")
+download.file(url, destfile = "gffdiff.tmp", method = "wget")
 
-gffls0 <- readLines("gffdiff")
+gffls0 <- readLines("gffdiff.tmp")
 gffls <- paste0(dirname(url), "/", gffls0)
 
 sapply(gffls, function(f)
@@ -32,7 +32,5 @@ autoplot(gff, aes(fill = different), facets = file ~ .) +
     theme(legend.position="none")
 dev.off()
 
-system("cat output.svg")
-
-unlink(c("gffdiff", gffls0, "output.svg"))
+unlink(c("gffdiff.tmp", gffls0))
 

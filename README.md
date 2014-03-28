@@ -10,5 +10,18 @@ Usage: `gff2svg https://raw.githubusercontent.com/OpenScienceRender/gff2svg/mast
 
 
 
+gffdiff: compare 2 gff3 files
+=============================
+
+Requirements: `R` and
+
+```{s}
+source("http://www.bioconductor.org/biocLite.R")
+biocLite(c("rtracklayer", "ggbio"))
+```
+
+Input: file with 2 gff3 filenames to be compared. These should be present at the same url as the original input.
+
+Usage: `gffdiff https://raw.githubusercontent.com/OpenScienceRender/gff2svg/master/data/my.gffdiff`
 
 

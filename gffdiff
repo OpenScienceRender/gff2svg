@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f output.svg
+./gffdiff.R $1
+cat output.svg
+rm output.svg
