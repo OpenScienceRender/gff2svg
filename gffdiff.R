@@ -1,4 +1,4 @@
-#! /usr/local/bin/Rscript
+#! /usr/bin/Rscript
 
 args <- commandArgs()
 url <- args[-(1:match("--args", args))]
